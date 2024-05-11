@@ -7,7 +7,7 @@ const AppLayout = () => {
         <div className='sidebar'>
             <Outlet />
         </div>
-        <div className='mapContainer'>map</div>
+        <Map />
     </div>
   )
 }
