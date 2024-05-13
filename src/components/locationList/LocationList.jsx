@@ -6,7 +6,8 @@ const LocationList = () => {
     if(isLoading) <p>loading...</p>
   return (
     <div className='nearbyLocation'>
-        <h2>NearbyLocation</h2>
+        <h2>NearbyLocations</h2>
+        <div className="locationList">
         {data.map((item) => {
             return (
             <div className='locationItem' key={item.id}>
@@ -22,6 +23,7 @@ const LocationList = () => {
             </div>
             )
         })}
+        </div>
     </div>
   )
 }
